@@ -69,9 +69,10 @@ mike faille
 Ignacio Bazan-Lazcano
 Keith Thompson
 Cedric Peyravernay
-Kim Nguyen
 Akiya Kageichi
 Nathan Vieland
 Brian Matyas
 Jin Xiaodi
 Travis Charest
+Darran Anderson
+Luca Vanzella
