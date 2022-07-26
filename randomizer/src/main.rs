@@ -5,8 +5,12 @@ use std::iter::repeat_with;
 use std::{fs, io};
 
 fn main() -> io::Result<()> {
+    // How many of each?
+
     let n = fastrand::usize(..=4);
     let m = fastrand::usize(..=4);
+
+    // Randomize n items
 
     let file_paths = fs::read_dir("lists")?
         .map(|res| res.map(|e| e.path()))
@@ -21,11 +25,13 @@ fn main() -> io::Result<()> {
 
     let v: Vec<&str> = contents.lines().collect();
 
-    let rand_items: String = repeat_with(|| v[fastrand::usize(..v.len())])
+    let iter = repeat_with(|| v[fastrand::usize(..v.len())])
         .take(n)
-        .map(|i| i.replace(" ", "-"))
-        .intersperse(", ".to_string())
-        .collect();
+        .map(|i| i.replace(" ", "-"));
+
+    let rand_items: String = Itertools::intersperse(iter, ", ".to_string()).collect();
+
+    // Randomize m people
 
     let mut contents = String::new();
     let mut file = File::open("people.txt")?;
@@ -33,11 +39,13 @@ fn main() -> io::Result<()> {
 
     let v: Vec<&str> = contents.lines().collect();
 
-    let rand_people: String = repeat_with(|| v[fastrand::usize(..v.len())])
+    let iter = repeat_with(|| v[fastrand::usize(..v.len())])
         .take(m)
-        .map(|i| i.replace(" ", "-"))
-        .intersperse(", ".to_string())
-        .collect();
+        .map(|i| i.replace(" ", "-"));
+
+    let rand_people: String = Itertools::intersperse(iter, ", ".to_string()).collect();
+
+    // Print the style prompt
 
     println!("\n--style {rand_people}, {rand_items}\n");
 
