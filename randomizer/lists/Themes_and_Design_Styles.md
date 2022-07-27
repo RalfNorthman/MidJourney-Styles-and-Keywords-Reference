@@ -74,7 +74,7 @@ Chillwave
 Illusion 
 Brutalism 
 Escapism 
-Cypernoir
+Cybernoir
 Marvel Comics
 Cartoon
 Anime
