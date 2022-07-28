@@ -41,24 +41,28 @@ fn from_file(m: usize, file_name: &str) -> io::Result<String> {
     Ok(rand)
 }
 
+/*
 fn few() -> usize {
     fastrand::usize(..=1) + fastrand::usize(..=1)
+}
+*/
+
+fn maybe() -> usize {
+    fastrand::usize(..=1)
 }
 
 fn main() -> io::Result<()> {
     // How many of each?
 
-    let n1 = few();
-    let n2 = few();
-    let n3 = few();
-
-    let rand_cinema_people = from_file(n1, "cinema.txt")?;
-    let rand_other_people = from_file(n2, "people.txt")?;
-    let rand_items = from_dir(n3, "lists")?;
+    let cinema_people = from_file(1, "cinema.txt")?;
+    let camera = from_file(maybe(), "lists/Camera.md")?;
+    let light = from_file(maybe(), "lists/Lighting.md")?;
+    let other_people = from_file(maybe(), "people.txt")?;
+    let items = from_dir(maybe(), "lists")?;
 
     // Print the style prompt
 
-    println!("\n--style {rand_cinema_people}, {rand_other_people}, {rand_items}\n");
+    println!("\n :: cinematic movie still --ar 3:2 --style {cinema_people}, {camera}, {light}, {other_people}, {items}\n");
 
     Ok(())
 }

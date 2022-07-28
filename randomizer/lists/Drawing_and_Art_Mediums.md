@@ -60,10 +60,6 @@ Glass Paint
 Text
 Typeface
 Font
-Says
-Says Hello
-Says "Hello"
-Says 'Hello'
 Modern Art
 Concept Art
 Digital Art
