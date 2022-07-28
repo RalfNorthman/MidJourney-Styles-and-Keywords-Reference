@@ -101,3 +101,46 @@ Buster Keaton
 Michael Curtiz
 Sam Raimi
 Robert Altman
+Sam Peckinpah
+Peter Weir
+Spike Lee
+Jean Renoir
+Andrei Tarkovsky
+Elia Kazan
+John Cassavetes
+Vincente Minnelli
+Frank Darabont
+Kathryn Bigelow
+George Cukor
+Ron Howard
+John Carpenter
+Guy Ritchie
+Tony Scott
+Gus Van Sant
+Preston Sturges
+Sergei Eisenstein
+David O Russel
+John Frankenheimer
+Blake Edwards
+Ernst Lubitsch
+Jonathan Demme
+Alejandro G Inarritu
+Sam Mendes
+Joseph L Mankiewicz
+Satyajit Ray
+Paul Thomas Anderson
+Alfonso Cuaron
+Paul Verhoeven
+F W Murnau
+Robert Wise
+Franco Zeffirelli
+Paul Greengrass
+Don Siegel
+Vittorio de Sica
+John Hughes
+Robert Rodriguez
+Zack Snyder
+Mel Gibson
+Luis Bunuel
+Greta Gerwig
+Krzysztof Kieslowski
