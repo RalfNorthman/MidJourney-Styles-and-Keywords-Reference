@@ -60,7 +60,7 @@ fn main() -> io::Result<()> {
 
     // Print the style prompt
 
-    println!("\n :: cinematic movie still 35mm --ar 3:2 --style {cinema_people}, {camera}, {sfx}, {other_people}, {items}\n");
+    println!("\n --iw 2.0 cinematic feature-film 35mm, motion-picture, movie, film grain --ar 3:2 --style {cinema_people}, {camera}, {sfx}, {other_people}, {items}\n");
 
     Ok(())
 }
