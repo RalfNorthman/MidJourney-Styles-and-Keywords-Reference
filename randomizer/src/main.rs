@@ -41,11 +41,9 @@ fn from_file(m: usize, file_name: &str) -> io::Result<String> {
     Ok(rand)
 }
 
-/*
 fn few() -> usize {
     fastrand::usize(..=1) + fastrand::usize(..=1)
 }
-*/
 
 fn maybe() -> usize {
     fastrand::usize(..=1)
@@ -56,13 +54,13 @@ fn main() -> io::Result<()> {
 
     let cinema_people = from_file(1, "cinema.txt")?;
     let camera = from_file(maybe(), "lists/Camera.md")?;
-    let light = from_file(maybe(), "lists/Lighting.md")?;
+    let sfx = from_file(few(), "lists/SFX_and_Shaders.md")?;
     let other_people = from_file(maybe(), "people.txt")?;
     let items = from_dir(maybe(), "lists")?;
 
     // Print the style prompt
 
-    println!("\n :: cinematic movie still --ar 3:2 --style {cinema_people}, {camera}, {light}, {other_people}, {items}\n");
+    println!("\n :: cinematic movie still 35mm --ar 3:2 --style {cinema_people}, {camera}, {sfx}, {other_people}, {items}\n");
 
     Ok(())
 }
