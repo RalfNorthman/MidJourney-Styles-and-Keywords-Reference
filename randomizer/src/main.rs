@@ -45,23 +45,23 @@ fn few() -> usize {
     fastrand::usize(..=1) + fastrand::usize(..=1)
 }
 
+/*
 fn maybe() -> usize {
     fastrand::usize(..=1)
 }
+*/
 
 fn main() -> io::Result<()> {
     // How many of each?
 
     let cinema_people = from_file(1, "opinionated/cinema.txt")?;
-    let artists = from_file(1, "opinionated/artists.txt")?;
-    let camera = from_file(maybe(), "lists/Camera.md")?;
-    let sfx = from_file(maybe(), "lists/SFX_and_Shaders.md")?;
-    let items = from_dir(few(), "lists")?;
+    let draw = from_file(1, "draw.txt")?;
+    let artists = from_file(few(), "opinionated/artists.txt")?;
 
     // Print the style prompt
 
     println!(
-        "\n --iw 1.5 cinematic feature-film 35mm, motion-picture, movie, film grain --ar 3:2 --style {cinema_people}, {artists}, {camera}, {sfx}, {items}\n"
+        "\n --iw 1.5 cinematic feature-film 35mm, motion-picture, movie, film grain --ar 3:2 --style {cinema_people}, {draw}, {artists}\n"
     );
 
     Ok(())
