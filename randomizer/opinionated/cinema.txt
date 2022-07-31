@@ -1,0 +1,81 @@
+David Fincher
+Denis Villeneuve
+Chrisopher Nolan
+Darren Aronofsky
+Roger Deakins
+Michael Ballhaus
+Conrad L Hall
+Vittorio Storaro
+Emmanuel Lubezki
+Robert Burks
+Mihai Malaimare Jr
+Sven Nykvist
+Gordon Willis
+Mandy Walker
+Geoffrey Unsworth
+Bradford Young
+Robert D Yeoman
+Christopher Doyle
+Haskell Wexler
+Hoyte van Hoytema
+Bruno Delbonnel
+Slawomir Idziak
+Roy Andersson
+Jeff Cronenweth
+Peter Jackson
+John Alcott
+Stanley Kubrick
+Karl Struss
+Steven Soderbergh
+Vilmos Zsigmond
+Fritz Arno Wagner
+Ping Bin Lee
+Karl Freund
+Steven Spielberg
+Martin Scorsese
+Alfred Hitchcock
+Francis Ford Coppola
+Woody Allen
+Ingmar Bergman
+Wong Kar-wai
+Wes Anderson
+David Lynch
+Joel Coen
+James Cameron
+Sidey Lumet
+Tim Burton
+Quentin Tarantino
+Guillermo del Toro
+Danny Boyle
+Ridley Scott
+Akira Kurosawa
+Sergio Leone
+Fritz Lang
+Brian de Palma
+Francois Truffaut
+Terrence Malick
+Ang Lee
+George Lucas
+Terry Gilliam
+Werner Herzog
+Buster Keaton
+Sam Raimi
+Peter Weir
+Andrei Tarkovsky
+John Cassavetes
+Frank Darabont
+Kathryn Bigelow
+George Cukor
+Ron Howard
+John Carpenter
+Sergei Eisenstein
+Alejandro G Inarritu
+Satyajit Ray
+Alfonso Cuaron
+Paul Verhoeven
+Franco Zeffirelli
+Zack Snyder
+Krzysztof Kieslowski
+Michael Mann
+
+ 

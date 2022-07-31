@@ -52,8 +52,8 @@ fn maybe() -> usize {
 fn main() -> io::Result<()> {
     // How many of each?
 
-    let cinema_people = from_file(1, "cinema.txt")?;
-    let other_people = from_file(1, "people.txt")?;
+    let cinema_people = from_file(1, "opinionated/cinema.txt")?;
+    let artists = from_file(1, "opinionated/artists.txt")?;
     let camera = from_file(maybe(), "lists/Camera.md")?;
     let sfx = from_file(maybe(), "lists/SFX_and_Shaders.md")?;
     let items = from_dir(few(), "lists")?;
@@ -61,7 +61,7 @@ fn main() -> io::Result<()> {
     // Print the style prompt
 
     println!(
-        "\n --iw 1.5 cinematic feature-film 35mm, motion-picture, movie, film grain --ar 3:2 --style {cinema_people}, {other_people}, {camera}, {sfx}, {items}\n"
+        "\n --iw 1.5 cinematic feature-film 35mm, motion-picture, movie, film grain --ar 3:2 --style {cinema_people}, {artists}, {camera}, {sfx}, {items}\n"
     );
 
     Ok(())
